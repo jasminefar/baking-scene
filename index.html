@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Bear Baking Cookies</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6d6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .scene {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #fff1e6, #f0e6d6);
+        }
+        .table {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #b58b6f;
+        }
+        .oven {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 120px;
+            height: 180px;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+        }
+        .oven-door {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #a9a9a9;
+            border-top: 5px solid #888;
+        }
+        .oven-handle {
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            width: 100px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .bear {
+            position: absolute;
+            bottom: 120px;
+            left: 250px;
+            width: 200px;
+            height: 280px;
+            background-color: #f4a261;
+            border-radius: 100px 100px 0 0;
+        }
+        .bear-head {
+            position: absolute;
+            top: -60px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #f4a261;
+            border-radius: 50%;
+        }
+        .bear-ear {
+            position: absolute;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #f4a261;
+            border-radius: 50%;
+        }
+        .bear-ear.left {
+            left: -10px;
+        }
+        .bear-ear.right {
+            right: -10px;
+        }
+        .bear-eye {
+            position: absolute;
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+        .bear-eye.left {
+            left: 20px;
+        }
+        .bear-eye.right {
+            right: 20px;
+        }
+        .bear-nose {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+        .bear-mouth {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            width: 40px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 0 0 20px 20px;
+            transform: translateX(-50%);
+        }
+        .hat {
+            position: absolute;
+            top: -80px;
+            left: 10px;
+            width: 80px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50% 50% 0 0;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        }
+        .hat-band {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #f4a261;
+            border-radius: 0 0 10px 10px;
+        }
+        .cookies {
+            position: absolute;
+            bottom: 60px;
+            left: 450px;
+            width: 100px;
+            height: 20px;
+            background-color: #d3a95b;
+            border-radius: 10px;
+        }
+        .cookie {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #a05a2c;
+            border-radius: 50%;
+        }
+        .cookie:nth-child(1) {
+            top: 3px;
+            left: 10px;
+        }
+        .cookie:nth-child(2) {
+            top: 3px;
+            left: 40px;
+        }
+        .cookie:nth-child(3) {
+            top: 3px;
+            left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="background"></div>
+        <div class="table"></div>
+        <div class="oven">
+            <div class="oven-door"></div>
+            <div class="oven-handle"></div>
+        </div>
+        <div class="bear">
+            <div class="bear-head">
+                <div class="bear-ear left"></div>
+                <div class="bear-ear right"></div>
+                <div class="bear-eye left"></div>
+                <div class="bear-eye right"></div>
+                <div class="bear-nose"></div>
+                <div class="bear-mouth"></div>
+                <div class="hat">
+                    <div class="hat-band"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cookies">
+            <div class="cookie"></div>
+            <div class="cookie"></div>
+            <div class="cookie"></div>
+        </div>
+    </div>
+</body>
+</html>
